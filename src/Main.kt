@@ -58,6 +58,7 @@ class  HomeScreen : JFrame() {
 
                 }
 
+
                 val checkBoxTwo = JCheckBox("iCrazyTeddy")
                 win.add(checkBoxTwo)
 
@@ -68,6 +69,7 @@ class  HomeScreen : JFrame() {
                     Desktop.getDesktop().browse(URI.create(url.toString()) as URI)
                 }
 
+                win.isResizable = false
             }
         }
 
