@@ -14,7 +14,7 @@ import javax.swing.JTextField
 
 class CreatePage : JFrame() {
     init {
-        setSize(300, 500)
+        setSize(900 / 3, 250 * 2)
         isVisible = true
     }
 }
@@ -45,10 +45,11 @@ class StringsExtended {
 class  HomeScreen : JFrame() {
 
     init {
-        setSize(300, 600)
+        val pos = Positions()
+        setSize(900 / 3, 1200 / 2)
         isResizable = false
         contentPane.layout = FlowLayout()
-        contentPane.background = Color(10, 10, 10)
+        contentPane.background = Color(pos.getX(10), pos.getY(10), pos.getZ(10))
         val button = JButton("Submit")
         val label = JLabel()
         val nameTitle = JLabel("YouTubeChannelOpenerURL")
@@ -58,7 +59,6 @@ class  HomeScreen : JFrame() {
             .createStringOutput("XpertThief".uppercase(getDefault()))
         val str2 = StringsExtended().createStringOutput("iCrazyTeddy".uppercase(getDefault()))
 
-        val pos = Positions()
 
         button.addActionListener {
 
